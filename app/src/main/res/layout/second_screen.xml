@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/prompt"
+        android:textSize="30sp"
+        android:text="Type in number of miles to convert to kilometers:"
+        android:layout_width="500dp"
+        android:layout_height="80dp"/>
+
+    <EditText
+        android:id="@+id/editBox"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/prompt"/>
+
+    <TextView
+        android:id="@+id/answerBox"
+        android:textSize="30sp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editBox"/>
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="ENTER"
+        android:onClick="goConversion"
+        android:layout_below="@id/prompt"
+        android:layout_toRightOf="@id/editBox"
+        />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="CLEAR"
+        android:onClick="goClear"
+        android:layout_toRightOf="@id/answerBox"
+        android:layout_below="@id/buttonEnter"/>
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="ABOUT"
+        android:onClick="goAbout"
+        android:layout_below="@id/buttonClear"/>
+
+    <TextView
+        android:id="@+id/aboutBox"
+        android:textSize="20sp"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/buttonAbout"/>
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="RETURN"
+        android:onClick="goBack"
+        android:layout_below="@id/aboutBox" />
+</RelativeLayout>

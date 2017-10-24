@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="helloorientation2.elizabethkoshelev.cs.brandeis.edu.helloorientation2.MainActivity">
+
+    <TextView
+        android:id="@+id/firstLabel"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Click below for a miles to kilometers conversion calculator!" />
+
+    <Button
+        android:id="@+id/buttonFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLabel"
+        android:text="Click Me"
+        android:onClick="goConversion" />
+
+    <TextView
+        android:id="@+id/lastConversion"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/buttonFirst"/>
+
+</RelativeLayout>
